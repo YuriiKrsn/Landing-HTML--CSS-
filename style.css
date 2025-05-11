@@ -377,3 +377,70 @@ button {
 .banner-content .header-link-item-start .link-start {
     margin-right: 8px;
 }
+
+/* Testimonials */
+.testimonials-section {
+    padding: 120px 0;
+}
+
+.testimonials-content {
+    text-align: center;
+}
+
+.testimonials-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+.testimonials-card {
+    width: 100%;
+    height: 434px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.testimonials-card-content {
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar-box {
+    margin-bottom: 16px;
+}
+
+.avatar-image {
+    width: 56px;
+    height: 56px;
+}
+
+.user-name {
+    color: #111827;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.user-link {
+    color: #374151;
+    font-size: 14px;
+    font-family: var(--font-text);
+}
+
+.user-comment {
+    color: var(--light-black);
+    font-size: 16px;
+    font-family: var(--font-text);
+    margin-top: 30px;
+}
+
+.user-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
