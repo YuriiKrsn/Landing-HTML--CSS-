@@ -56,12 +56,12 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .header-logo {
     display: flex;
     align-items: center;
-    padding: 32px 0;
     cursor: pointer;
 }
 
@@ -183,7 +183,12 @@ button {
 /* Clients Section */
 
 .clients-section {
-    margin: 60px 0;
+    padding: 60px 0;
+}
+
+.clients-container-mob {
+    display: none;
+    flex-direction: column;
 }
 
 .clients-list {
@@ -243,7 +248,7 @@ button {
 }
 
 .feature-card-content {
-    max-width: 310px;
+    padding: 40px 30px;
 }
 
 .feature-card:nth-child(1) .feature-icon {
@@ -261,7 +266,6 @@ button {
 .feature-icon {
     padding: 20px;
     border-radius: 20px;
-    margin-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -284,7 +288,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     cursor: pointer;
 }
 
@@ -337,6 +341,11 @@ button {
     color: var(--light-black);
     font-size: 16px;
     font-family: var(--font-text);
+}
+
+.rating-section-mobile {
+    display: none;
+    padding: 100px 0;
 }
 
 /* Banner */
@@ -394,7 +403,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 60px;
+    margin-top: 60px;
     gap: 30px;
 }
 
@@ -415,7 +424,14 @@ button {
     justify-content: space-between;
 }
 
+.testimonials-card-content-md {
+    display: none;
+}
+
 .avatar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 16px;
 }
 
@@ -443,6 +459,7 @@ button {
     font-size: 16px;
     font-family: var(--font-text);
     margin-top: 30px;
+    line-height: 150%;
 }
 
 .user-rating {
@@ -809,4 +826,397 @@ button {
     align-items: center;
     border-radius: 100%;
     cursor: pointer;
+}
+
+@media (max-width: 780px) {
+    .wrapper {
+        max-width: 700px;
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    /* Header */
+
+    .header .header-link-item-contact {
+        display: none;
+    }
+
+    .header .header-link-item-faq {
+        margin: 0;
+    }
+
+    .header .header-link-item-start {
+        display: none;
+    }
+
+    /* Hero Section */
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-links .hero-link-item-faq {
+        display: none;
+    }
+
+    .hero-visual {
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .hero-image {
+        width: 320px;
+        height: 320px;
+    }
+
+    /* Clients Section */
+
+    .clients-section {
+        padding: 40px 0;
+    }
+
+    .clients-section .wrapper {
+        padding: 0 42px;
+    }
+
+    .clients-list {
+        height: 104px;
+    }
+
+    .client-img {
+        width: 70px;
+    }
+
+    /* Features Section */ 
+    .features-section {
+        padding: 100px 0;
+    }
+
+    .features-cards {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Rating Section */
+
+    .rating-section {
+        display: none;
+    }
+
+    .rating-section-mobile {
+        display: flex;
+    }
+
+    .rating-cards {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .rating-card-content {
+        padding: 30px 16px;
+    }
+
+    /* Banner Section */
+
+    .banner-section {
+        padding: 100px 0;
+    }
+
+    .banner-container {
+        gap: 20px;
+    }
+
+    .banner-visual {
+        margin: 0;
+    }
+
+    .banner-image {
+        width: 320px;
+        height: 267px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .banner-subtitle {
+        font-size: 16px;
+    }
+
+    /* Testimonials Section */
+    .testimonials-section {
+        padding: 100px 0;
+    }
+
+    .testimonials-cards {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .testimonials-card {
+        height: 271px;
+    }
+
+    .testimonials-card-content {
+        display: none;
+    }
+
+    .testimonials-card-content-md {
+        padding: 40px 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user-info {
+        flex: 1;
+    }
+
+    .avatar-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-comm-rating {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    .user-comment {
+        margin: 0;
+    }
+
+    /* Subscription Section */
+    .subscription-section {
+        padding: 100px 0;
+    }
+
+    .subscription-cards {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Team Section */
+    .team-section{
+        padding: 100px 0;
+    }
+
+    .team-cards {
+        margin-top: 40px;
+    }
+
+    .team-image-box {
+        height: 173px;
+    } 
+
+    /* Contact Section */
+    
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-container {
+        padding: 40px;
+    }
+
+    .contact-subtitle {
+        max-width: 465px;
+    }
+
+    .contact-content {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-form {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 375px ) {
+    .wrapper {
+        max-width: 331px;
+        margin: auto;
+        padding: 0 8px;
+    }
+
+    /* Header */
+
+    .header-content {
+        justify-content: center;
+        height: 72px;
+    }
+
+    .header .header-link-item-faq{
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-links {
+        margin-top: 30px;
+    }
+
+    /* Clients Section */ 
+    .clients-section {
+        padding: 0;
+    }
+
+    .clients-section .wrapper {
+        max-width: 375px;
+        padding: 0;
+    }
+
+    .clients-container {
+        display: none;
+    }
+
+    .clients-container-mob {
+        display: flex;
+        
+        border-top: 1px solid #D8D8D8;
+        border-bottom: 1px solid #D8D8D8;
+        gap: 10px;
+    }
+
+    .clients-list {
+        display: flex;
+        border: none;
+        height: 56px;
+    }
+
+    .clients-content-mob {
+        padding: 30px;
+    }
+
+    /* Features Section */ 
+    .features-section {
+        padding: 60px 0;
+    }
+
+    /* Banner Section */
+
+    .banner-section {
+        padding: 60px 0;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner-content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+
+    /* Rating Section */
+    .rating-section-mobile {
+        padding: 60px 0;
+    }
+
+    .rating-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .rating-num {
+        font-size: 28px;
+    }
+
+    /* Testimonials Section */
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .testimonials-card {
+        height: 458px;
+    }
+
+    .testimonials-card-content {
+        display: flex;
+    }
+
+    .testimonials-card-content-md {
+        display: none;
+    }
+
+    .user-comment {
+        margin-top: 30px;
+    }
+
+    /* Subscription Section  */
+    .subscription-section {
+        padding: 60px 0;
+    }
+
+    .subscription-cards {
+        gap: 30px;
+    }
+
+    /* Team Section */
+    .team-section {
+        padding: 60px 0;
+    }
+
+    .team-cards {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .team-image-box {
+        height: 278px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 30px 0;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 20px;
+    } 
 }
